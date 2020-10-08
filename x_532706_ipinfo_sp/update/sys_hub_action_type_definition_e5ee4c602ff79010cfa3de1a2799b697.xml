@@ -1,0 +1,3192 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get geographic data from a public IP address.</description>
+        <ih_action>false</ih_action>
+        <internal_name>get_geographic_data_from_ip</internal_name>
+        <label_cache>[{"name":"{{action.ip_address}}","label":"action➛IP address","type":"action","ref":""},{"name":"{{step[9bc3c504-cffe-434b-a84d-af42c7f16fe5].response_body}}","label":"step➛Call IPInfo REST API➛Response Body","type":"step","ref":""},{"name":"{{step[9bc3c504-cffe-434b-a84d-af42c7f16fe5].status_code}}","label":"step➛Call IPInfo REST API➛Status Code","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].variable}}","label":"step➛Parse Returned Data➛variable","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].hostname}}","label":"step➛Parse Returned Data➛hostname","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].city}}","label":"step➛Parse Returned Data➛city","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].region}}","label":"step➛Parse Returned Data➛region","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].variable4}}","label":"step➛Parse Returned Data➛variable4","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].latitude}}","label":"step➛Parse Returned Data➛latitude","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].latitude5}}","label":"step➛Parse Returned Data➛latitude","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].longitude}}","label":"step➛Parse Returned Data➛longitude","type":"step","ref":""},{"name":"{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].country}}","label":"step➛Parse Returned Data➛country","type":"step","ref":""}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Get Geographic Data from IP</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:27:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5ee4c602ff79010cfa3de1a2799b697</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Get Geographic Data from IP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_e5ee4c602ff79010cfa3de1a2799b697</sys_update_name>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=e5ee4c602ff79010cfa3de1a2799b697"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e5ee4c602ff79010cfa3de1a2799b697"/>
+    <sys_element_mapping action="delete_multiple" query="id=e5ee4c602ff79010cfa3de1a2799b697"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>city</field>
+        <id>e5ee4c602ff79010cfa3de1a2799b697</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>3f89782c2f3b9010cfa3de1a2799b6d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</table>
+        <value>{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].city}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>country</field>
+        <id>e5ee4c602ff79010cfa3de1a2799b697</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:34:02</sys_created_on>
+        <sys_id>2fa9f82c2f3b9010cfa3de1a2799b6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</table>
+        <value>{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].country}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>hostname</field>
+        <id>e5ee4c602ff79010cfa3de1a2799b697</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>7b89782c2f3b9010cfa3de1a2799b6d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</table>
+        <value>{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].hostname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ip_address</field>
+        <id>e5ee4c602ff79010cfa3de1a2799b697</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>ff89782c2f3b9010cfa3de1a2799b6d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</table>
+        <value>{{action.ip_address}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>latitude</field>
+        <id>e5ee4c602ff79010cfa3de1a2799b697</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:34:02</sys_created_on>
+        <sys_id>efa9f82c2f3b9010cfa3de1a2799b6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</table>
+        <value>{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].latitude}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>longitude</field>
+        <id>e5ee4c602ff79010cfa3de1a2799b697</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:34:02</sys_created_on>
+        <sys_id>67a9f82c2f3b9010cfa3de1a2799b6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</table>
+        <value>{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].longitude}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>region</field>
+        <id>e5ee4c602ff79010cfa3de1a2799b697</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:34:02</sys_created_on>
+        <sys_id>a3a9f82c2f3b9010cfa3de1a2799b6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:34:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</table>
+        <value>{{step[63d3e899-e663-47e3-9fc9-b7a37843781f].region}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=e5ee4c602ff79010cfa3de1a2799b697^sys_idNOT IN2d5f0ca02ff79010cfa3de1a2799b6ea,ce483ce82f3b9010cfa3de1a2799b6c8"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</action>
+        <cid>9bc3c504-cffe-434b-a84d-af42c7f16fe5</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Call IPInfo REST API</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>2d5f0ca02ff79010cfa3de1a2799b6ea</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2d5f0ca02ff79010cfa3de1a2799b6ea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:25</sys_created_on>
+        <sys_id>0abff4202f7b9010cfa3de1a2799b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <value>bcbe3cec2f3b9010cfa3de1a2799b66e</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>3d5f4ca02ff79010cfa3de1a2799b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:25</sys_created_on>
+        <sys_id>46bff4202f7b9010cfa3de1a2799b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>715f4ca02ff79010cfa3de1a2799b61f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:17:56</sys_updated_on>
+        <value/>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>795f4ca02ff79010cfa3de1a2799b61f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <value>use_connection_alias</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:45</sys_created_on>
+        <sys_id>92b5f0a82f3b9010cfa3de1a2799b6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:45</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:45</sys_created_on>
+        <sys_id>9ab5f0a82f3b9010cfa3de1a2799b6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:45</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>b15f4ca02ff79010cfa3de1a2799b620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>fd5f4ca02ff79010cfa3de1a2799b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <value>https://ipinfo.io</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2d5f0ca02ff79010cfa3de1a2799b6ea"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>fd5f4ca02ff79010cfa3de1a2799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>3d5f4ca02ff79010cfa3de1a2799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>795f4ca02ff79010cfa3de1a2799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>b55f4ca02ff79010cfa3de1a2799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:25</sys_created_on>
+        <sys_id>82bff4202f7b9010cfa3de1a2799b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:45</sys_created_on>
+        <sys_id>5ab5f0a82f3b9010cfa3de1a2799b6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:45</sys_created_on>
+        <sys_id>12b5f0a82f3b9010cfa3de1a2799b6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>bd5f4ca02ff79010cfa3de1a2799b61d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:17:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.ip_address}}/json</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:25</sys_created_on>
+        <sys_id>cebff4202f7b9010cfa3de1a2799b610</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2d5f0ca02ff79010cfa3de1a2799b6ea^sys_idNOT INcabff4202f7b9010cfa3de1a2799b605"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Call IPInfo REST API">2d5f0ca02ff79010cfa3de1a2799b6ea</model>
+        <model_id>2d5f0ca02ff79010cfa3de1a2799b6ea</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2d5f0ca02ff79010cfa3de1a2799b6ea</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:24</sys_created_on>
+        <sys_id>cabff4202f7b9010cfa3de1a2799b605</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</action>
+        <cid>63d3e899-e663-47e3-9fc9-b7a37843781f</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Parse Returned Data</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>ce483ce82f3b9010cfa3de1a2799b6c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ce483ce82f3b9010cfa3de1a2799b6c8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce483ce82f3b9010cfa3de1a2799b6c8</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>92483ce82f3b9010cfa3de1a2799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+		// Only parse the response body if the status code is 200	
+    	if (inputs.status_code == '200'){
+			
+          	// Parse the response_body input variable and save parsed object as responseBody
+          	var responseBody = JSON.parse(inputs.response_body);
+			
+          	// Map the parsed responseBody values to output variables
+          	outputs.hostname = responseBody.hostname;
+			outputs.city = responseBody.city;
+			outputs.region = responseBody.region;
+          	outputs.country = responseBody.country;
+          
+          	// split the returned location into separate latitude and longitude values
+          	var locArray = responseBody.loc.split(",");
+          	outputs.latitude = locArray[0];
+          	outputs.longitude = locArray[1];
+      }
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce483ce82f3b9010cfa3de1a2799b6c8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>9e483ce82f3b9010cfa3de1a2799b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ce483ce82f3b9010cfa3de1a2799b6c8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ce483ce82f3b9010cfa3de1a2799b6c8</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>5a483ce82f3b9010cfa3de1a2799b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>ce483ce82f3b9010cfa3de1a2799b6c8</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>9e483ce82f3b9010cfa3de1a2799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ce483ce82f3b9010cfa3de1a2799b6c8</table>
+        <value>{{step[9bc3c504-cffe-434b-a84d-af42c7f16fe5].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>ce483ce82f3b9010cfa3de1a2799b6c8</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>1e483ce82f3b9010cfa3de1a2799b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>ce483ce82f3b9010cfa3de1a2799b6c8</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>52483ce82f3b9010cfa3de1a2799b6f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ce483ce82f3b9010cfa3de1a2799b6c8</table>
+        <value>{{step[9bc3c504-cffe-434b-a84d-af42c7f16fe5].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ce483ce82f3b9010cfa3de1a2799b6c8^sys_idNOT IN8a483ce82f3b9010cfa3de1a2799b6d1,ca483ce82f3b9010cfa3de1a2799b6cc"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>8a483ce82f3b9010cfa3de1a2799b6d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>ca483ce82f3b9010cfa3de1a2799b6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ce483ce82f3b9010cfa3de1a2799b6c8^sys_idNOT IN02483ce82f3b9010cfa3de1a2799b6e3,2789782c2f3b9010cfa3de1a2799b68c,42483ce82f3b9010cfa3de1a2799b6dd,86483ce82f3b9010cfa3de1a2799b6d6,8e483ce82f3b9010cfa3de1a2799b6ee,ce483ce82f3b9010cfa3de1a2799b6e8"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aefc04d1-eb92-40e6-a262-7b9564f4d8f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>region</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>region</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>02483ce82f3b9010cfa3de1a2799b6e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7a85de71-a764-4cb3-a4c0-da70fff272de</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>country</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:29</sys_created_on>
+        <sys_id>2789782c2f3b9010cfa3de1a2799b68c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=be3819c7-f243-4d57-9662-e5adf18470dc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>city</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>42483ce82f3b9010cfa3de1a2799b6dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=45c32307-4804-48d5-97e1-40d4ba61c95f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hostname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>hostname</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>86483ce82f3b9010cfa3de1a2799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=db5c8541-31b8-4dfb-8c6c-8ba273479d1b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>longitude</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>longitude</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>8e483ce82f3b9010cfa3de1a2799b6ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4286724d-0708-4221-8ff9-c03146d16048</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>latitude</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>latitude</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>ce483ce82f3b9010cfa3de1a2799b6e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=e5ee4c602ff79010cfa3de1a2799b697^sys_idNOT IN9eb5f0a82f3b9010cfa3de1a2799b6a4"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=ip_address,uiTypeLabel=IP Address,uiUniqueId=cc3572e2-c0c3-4724-b743-c5eb5127b85f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ip_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">ip_address</internal_type>
+        <label>IP address</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</model>
+        <model_id>e5ee4c602ff79010cfa3de1a2799b697</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:44</sys_created_on>
+        <sys_id>9eb5f0a82f3b9010cfa3de1a2799b6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=e5ee4c602ff79010cfa3de1a2799b697^sys_idNOT IN3f89782c2f3b9010cfa3de1a2799b6be,7f89782c2f3b9010cfa3de1a2799b6b8,a888fce82f3b9010cfa3de1a2799b66c,b389782c2f3b9010cfa3de1a2799b6d1,bf89782c2f3b9010cfa3de1a2799b6a6,bf89782c2f3b9010cfa3de1a2799b6ac,bf89782c2f3b9010cfa3de1a2799b6b2"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=2fd7a2ee-cb7c-4ccd-87db-4bb8d172635f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>latitude</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Latitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</model>
+        <model_id>e5ee4c602ff79010cfa3de1a2799b697</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>3f89782c2f3b9010cfa3de1a2799b6be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:34:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=40e1a0e5-413a-449d-8d3b-e819363448a3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>region</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Region</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</model>
+        <model_id>e5ee4c602ff79010cfa3de1a2799b697</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>7f89782c2f3b9010cfa3de1a2799b6b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:34:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=ip_address,uiTypeLabel=IP Address,uiUniqueId=4f400e35-faa1-4c83-bdae-cb989544333f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ip_address</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">ip_address</internal_type>
+        <label>IP address</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</model>
+        <model_id>e5ee4c602ff79010cfa3de1a2799b697</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:28:54</sys_created_on>
+        <sys_id>a888fce82f3b9010cfa3de1a2799b66c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:28:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=ec440e4b-3c7f-4eaf-abd6-16e2fd5400c6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>longitude</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Longitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</model>
+        <model_id>e5ee4c602ff79010cfa3de1a2799b697</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>b389782c2f3b9010cfa3de1a2799b6d1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:34:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=9dcd71c9-6951-4c71-b235-7e4395de86db</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hostname</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Hostname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</model>
+        <model_id>e5ee4c602ff79010cfa3de1a2799b697</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>bf89782c2f3b9010cfa3de1a2799b6a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=a75aaddf-ce77-4ed4-805c-f2663949f350</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>City</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</model>
+        <model_id>e5ee4c602ff79010cfa3de1a2799b697</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>bf89782c2f3b9010cfa3de1a2799b6ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=613f89d5-04a3-466a-aa96-dbacc61ed5cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Country</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</model>
+        <model_id>e5ee4c602ff79010cfa3de1a2799b697</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>bf89782c2f3b9010cfa3de1a2799b6b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:34:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=e5ee4c602ff79010cfa3de1a2799b697^sys_idNOT IN2d5f0ca02ff79010cfa3de1a2799b6ea,ce483ce82f3b9010cfa3de1a2799b6c8"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</action>
+        <cid>9bc3c504-cffe-434b-a84d-af42c7f16fe5</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Call IPInfo REST API</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>2d5f0ca02ff79010cfa3de1a2799b6ea</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2d5f0ca02ff79010cfa3de1a2799b6ea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:25</sys_created_on>
+        <sys_id>0abff4202f7b9010cfa3de1a2799b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <value>bcbe3cec2f3b9010cfa3de1a2799b66e</value>
+        <variable display_value="">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>3d5f4ca02ff79010cfa3de1a2799b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:25</sys_created_on>
+        <sys_id>46bff4202f7b9010cfa3de1a2799b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>715f4ca02ff79010cfa3de1a2799b61f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:17:56</sys_updated_on>
+        <value/>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>795f4ca02ff79010cfa3de1a2799b61f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <value>use_connection_alias</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:45</sys_created_on>
+        <sys_id>92b5f0a82f3b9010cfa3de1a2799b6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:45</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:45</sys_created_on>
+        <sys_id>9ab5f0a82f3b9010cfa3de1a2799b6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:45</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>b15f4ca02ff79010cfa3de1a2799b620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2d5f0ca02ff79010cfa3de1a2799b6ea</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>fd5f4ca02ff79010cfa3de1a2799b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <value>https://ipinfo.io</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2d5f0ca02ff79010cfa3de1a2799b6ea"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>fd5f4ca02ff79010cfa3de1a2799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>3d5f4ca02ff79010cfa3de1a2799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>795f4ca02ff79010cfa3de1a2799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>b55f4ca02ff79010cfa3de1a2799b61e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 07:29:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:25</sys_created_on>
+        <sys_id>82bff4202f7b9010cfa3de1a2799b611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:45</sys_created_on>
+        <sys_id>5ab5f0a82f3b9010cfa3de1a2799b6ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:45</sys_created_on>
+        <sys_id>12b5f0a82f3b9010cfa3de1a2799b6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 07:29:02</sys_created_on>
+        <sys_id>bd5f4ca02ff79010cfa3de1a2799b61d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:17:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.ip_address}}/json</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>2d5f0ca02ff79010cfa3de1a2799b6ea</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:25</sys_created_on>
+        <sys_id>cebff4202f7b9010cfa3de1a2799b610</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2d5f0ca02ff79010cfa3de1a2799b6ea^sys_idNOT INcabff4202f7b9010cfa3de1a2799b605"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Call IPInfo REST API">2d5f0ca02ff79010cfa3de1a2799b6ea</model>
+        <model_id>2d5f0ca02ff79010cfa3de1a2799b6ea</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2d5f0ca02ff79010cfa3de1a2799b6ea</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 11:00:24</sys_created_on>
+        <sys_id>cabff4202f7b9010cfa3de1a2799b605</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 11:00:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Geographic Data from IP">e5ee4c602ff79010cfa3de1a2799b697</action>
+        <cid>63d3e899-e663-47e3-9fc9-b7a37843781f</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Parse Returned Data</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>ce483ce82f3b9010cfa3de1a2799b6c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ce483ce82f3b9010cfa3de1a2799b6c8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce483ce82f3b9010cfa3de1a2799b6c8</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>92483ce82f3b9010cfa3de1a2799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+		// Only parse the response body if the status code is 200	
+    	if (inputs.status_code == '200'){
+			
+          	// Parse the response_body input variable and save parsed object as responseBody
+          	var responseBody = JSON.parse(inputs.response_body);
+			
+          	// Map the parsed responseBody values to output variables
+          	outputs.hostname = responseBody.hostname;
+			outputs.city = responseBody.city;
+			outputs.region = responseBody.region;
+          	outputs.country = responseBody.country;
+          
+          	// split the returned location into separate latitude and longitude values
+          	var locArray = responseBody.loc.split(",");
+          	outputs.latitude = locArray[0];
+          	outputs.longitude = locArray[1];
+      }
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ce483ce82f3b9010cfa3de1a2799b6c8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>9e483ce82f3b9010cfa3de1a2799b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ce483ce82f3b9010cfa3de1a2799b6c8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ce483ce82f3b9010cfa3de1a2799b6c8</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>5a483ce82f3b9010cfa3de1a2799b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>ce483ce82f3b9010cfa3de1a2799b6c8</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>9e483ce82f3b9010cfa3de1a2799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ce483ce82f3b9010cfa3de1a2799b6c8</table>
+        <value>{{step[9bc3c504-cffe-434b-a84d-af42c7f16fe5].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>ce483ce82f3b9010cfa3de1a2799b6c8</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>1e483ce82f3b9010cfa3de1a2799b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>ce483ce82f3b9010cfa3de1a2799b6c8</id>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>52483ce82f3b9010cfa3de1a2799b6f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:56</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ce483ce82f3b9010cfa3de1a2799b6c8</table>
+        <value>{{step[9bc3c504-cffe-434b-a84d-af42c7f16fe5].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ce483ce82f3b9010cfa3de1a2799b6c8^sys_idNOT IN8a483ce82f3b9010cfa3de1a2799b6d1,ca483ce82f3b9010cfa3de1a2799b6cc"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>8a483ce82f3b9010cfa3de1a2799b6d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>ca483ce82f3b9010cfa3de1a2799b6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ce483ce82f3b9010cfa3de1a2799b6c8^sys_idNOT IN02483ce82f3b9010cfa3de1a2799b6e3,2789782c2f3b9010cfa3de1a2799b68c,42483ce82f3b9010cfa3de1a2799b6dd,86483ce82f3b9010cfa3de1a2799b6d6,8e483ce82f3b9010cfa3de1a2799b6ee,ce483ce82f3b9010cfa3de1a2799b6e8"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aefc04d1-eb92-40e6-a262-7b9564f4d8f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>region</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>region</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>02483ce82f3b9010cfa3de1a2799b6e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7a85de71-a764-4cb3-a4c0-da70fff272de</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>country</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:29</sys_created_on>
+        <sys_id>2789782c2f3b9010cfa3de1a2799b68c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=be3819c7-f243-4d57-9662-e5adf18470dc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>city</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>42483ce82f3b9010cfa3de1a2799b6dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=45c32307-4804-48d5-97e1-40d4ba61c95f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hostname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>hostname</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:55</sys_created_on>
+        <sys_id>86483ce82f3b9010cfa3de1a2799b6d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:27:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=db5c8541-31b8-4dfb-8c6c-8ba273479d1b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>longitude</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>longitude</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>8e483ce82f3b9010cfa3de1a2799b6ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4286724d-0708-4221-8ff9-c03146d16048</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>latitude</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>latitude</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">ce483ce82f3b9010cfa3de1a2799b6c8</model>
+        <model_id>ce483ce82f3b9010cfa3de1a2799b6c8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ce483ce82f3b9010cfa3de1a2799b6c8</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:27:56</sys_created_on>
+        <sys_id>ce483ce82f3b9010cfa3de1a2799b6e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e5ee4c602ff79010cfa3de1a2799b697^sys_idNOT IN5eb5f0a82f3b9010cfa3de1a2799b6aa"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ip_address</element>
+        <help/>
+        <hint>Find the physical location of this public IP address</hint>
+        <label>IP address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:16:44</sys_created_on>
+        <sys_id>5eb5f0a82f3b9010cfa3de1a2799b6aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:16:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697^sys_idNOT IN3789782c2f3b9010cfa3de1a2799b6c3,7789782c2f3b9010cfa3de1a2799b6bd,ac88fce82f3b9010cfa3de1a2799b671,b789782c2f3b9010cfa3de1a2799b6b7,bb89782c2f3b9010cfa3de1a2799b6d5,f789782c2f3b9010cfa3de1a2799b6ab,f789782c2f3b9010cfa3de1a2799b6b1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>latitude</element>
+        <help/>
+        <hint/>
+        <label>Latitude</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>3789782c2f3b9010cfa3de1a2799b6c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>region</element>
+        <help/>
+        <hint/>
+        <label>Region</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>7789782c2f3b9010cfa3de1a2799b6bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ip_address</element>
+        <help/>
+        <hint/>
+        <label>IP address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:28:54</sys_created_on>
+        <sys_id>ac88fce82f3b9010cfa3de1a2799b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:28:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>country</element>
+        <help/>
+        <hint/>
+        <label>Country</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>b789782c2f3b9010cfa3de1a2799b6b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>longitude</element>
+        <help/>
+        <hint/>
+        <label>Longitude</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>bb89782c2f3b9010cfa3de1a2799b6d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>hostname</element>
+        <help/>
+        <hint/>
+        <label>Hostname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>f789782c2f3b9010cfa3de1a2799b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>city</element>
+        <help/>
+        <hint/>
+        <label>City</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e5ee4c602ff79010cfa3de1a2799b697</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jitukumar.singh@dxc.com</sys_created_by>
+        <sys_created_on>2020-10-08 10:33:30</sys_created_on>
+        <sys_id>f789782c2f3b9010cfa3de1a2799b6b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_532706_ipinfo_sp">3afd8cec2fb79010cfa3de1a2799b649</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">3afd8cec2fb79010cfa3de1a2799b649</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jitukumar.singh@dxc.com</sys_updated_by>
+        <sys_updated_on>2020-10-08 10:33:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
